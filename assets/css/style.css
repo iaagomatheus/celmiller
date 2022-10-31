@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+  flex-direction: row;
+  color: white;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.redes {
+  width: 100%;
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.btn-whatsapp {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: rgb(0, 187, 45);
+}
+
+.btn-whatsapp :hover {
+  color: black;
+}
+
+.btn-instagram {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: rgb(153, 51, 153);
+}
+
+.btn-instagram :hover {
+  color: black;
+}
+
+.btn-facebook {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: rgb(14, 118, 168);
+}
+
+.btn-facebook :hover {
+  color: black;
+}
+
+.btn-telefone {
+  padding-right: 40px;
+  font-size: 3rem;
+  color: rgb(0, 100, 0);
+}
+
+.btn-telefone :hover {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  width: auto;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+
+}
