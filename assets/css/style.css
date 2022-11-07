@@ -1,6 +1,9 @@
 body {
   padding: 0;
+  margin: 0;
   width: 100%;
+  font-family: Verdana;
+  background-color: black;
 }
 
 nav {
@@ -12,50 +15,63 @@ nav {
   justify-content: space-between;
 }
 
-.redes {
+.cont-nav {
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  padding-left: 3%;
-  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-redes {
+  padding-bottom: 20px;
+}
+
+.redes {
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-whatsapp {
-  padding-right: 40px;
-  font-size: 3rem;
+  padding-right: 50px;
+  font-size: 4rem;
   color: rgb(0, 187, 45);
 }
 
 .btn-whatsapp :hover {
-  color: black;
+  color: white;
 }
 
 .btn-instagram {
-  padding-right: 40px;
-  font-size: 3rem;
+  padding-right: 50px;
+  font-size: 4rem;
   color: rgb(153, 51, 153);
 }
 
 .btn-instagram :hover {
-  color: black;
+  color: white;
 }
 
 .btn-facebook {
-  padding-right: 40px;
-  font-size: 3rem;
+  padding-right: 50px;
+  font-size: 4rem;
   color: rgb(14, 118, 168);
 }
 
 .btn-facebook :hover {
-  color: black;
+  color: white;
 }
 
 .btn-telefone {
   padding-right: 40px;
-  font-size: 3rem;
+  font-size: 4rem;
   color: rgb(0, 100, 0);
 }
 
 .btn-telefone :hover {
-  color: black;
+  color: white;
 }
 
 a {
@@ -71,8 +87,135 @@ a {
 }
 
 .title {
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+}
 
+section {
+  background: lightgreen;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+.container {
+  position: absolute;
+  width: 320px;
+  perspective: 2500px;
+  justify-content: center;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 35px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("/assets/img/concerto/manutenção1.png");
+  transform: rotateY(0deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(2) {
+  background-image: url("/assets/img/concerto/acessorios1.jpg");
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+  background-image: url("/assets/img/concerto/vendas1.png");
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+  background-image: url("/assets/img/concerto/manutençãotablet.jpg");
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+  background-image: url("/assets/img/concerto/acessorios2.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+  background-image: url("/assets/img/concerto/vendas2.jpg");
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+  background-image: url("/assets/img/concerto/manutençãogeral.png");
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+  background-image: url("/assets/img/concerto/acessorios3.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+  background-image: url("/assets/img/concerto/vendas3.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.btn-orcamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border-style: solid;
+  height: 30px;
+  width: 150px;
+  color: black;
+  border-color: green;
+  font: bold 15px arial, sans-serif;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.sobre {
+  background-color: black;
+  color: white;
 }
